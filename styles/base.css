@@ -89,8 +89,20 @@ main .card {
   height: auto;
   border-radius: 5%;
   max-width: 200px;
+  margin-bottom: 20px;
 }
 
+.contry {
+  color: #04d361;
+  margin-bottom: 15px;
+}
+
+.flag {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  max-width: 200px;
+}
 .projects {
   color: #04d361;
   margin-bottom: 15px;
