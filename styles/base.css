@@ -68,7 +68,7 @@ main {
   gap: 20px;
   padding: 20px;
   background-color: #14181b;
-  color: #9b75dd;
+  color: white;
 }
 
 main .card {
@@ -118,6 +118,7 @@ main .card {
 .card a {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  color: #04d361;
 }
 
 .card a:hover {
