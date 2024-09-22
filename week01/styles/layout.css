@@ -33,7 +33,8 @@ header ul {
   justify-content: space-around;
 }
 
-header ul, a {
+header ul,
+a {
   list-style: none;
   text-decoration: none;
 }

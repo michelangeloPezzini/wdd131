@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  grid-area: header;
+  background-color: #14181b;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+header h1 {
+  padding: 15px 15px 15px 15px;
+}
+
+header p {
+  font-size: 25px;
+  color: #04d361;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #9b75dd;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #04d361;
+  transform: scale(1.1);
+  border-radius: 10%;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #14181b;
+  color: #9b75dd;
+}
+
+main .card {
+  grid-column: span 2;
+  background-color: #0e141b;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-me {
+  color: #04d361;
+  margin-bottom: 15px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  max-width: 200px;
+}
+
+.projects {
+  color: #04d361;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style-type: none;
+}
+.card li {
+  margin-bottom: 5px;
+}
+
+.card a {
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #04d361;
+  padding: 5px 15px;
+  transform: scale(1.1);
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 10px;
+  background-color: #9b75dd;
+  color: white;
+}
+
+#lastModified {
+  color: #14181b;
+}
