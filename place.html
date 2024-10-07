@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Michelangelo Pezzini. Web development project using HTML, CSS, and JavaScript.">
+  <meta name="author" content="Michelangelo Pezzini">
+  <link rel="stylesheet" href="styles/place.css">
+  <script defer src="scripts/place.js"></script>
+  <title>Place assignment</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Salt Lake City</h1>
+    <picture class="image">
+      <source srcset="images/large.webp" media="(min-width: 1000px)">
+      <source srcset="images/large.webp" media="(min-width: 500px)">
+      <img src="images/mobile.webp" alt="temple">
+    </picture>
+  </header>
+
+  <main class="content">
+
+    <div class="information">
+      <div class="data">
+        <h2>Data</h2>
+        <p><span>Area:</span> 285.9 km²</p>
+        <p><span>Population:</span> 200,000</p>
+        <p><span>Currency:</span> U.S. Dollar (USD)</p>
+        <p><span>Timezone:</span> Mountain Standard Time</p>
+        <p><span>Calling Code:</span> +1 (United States)</p>
+
+        <p><span>Languages:</span> English, with Spanish as a secondary language</p>
+        <p><span>Internet TLD:</span> .us</p>
+      </div>
+
+      <div class="weather">
+        <div class="weather-icon">
+          <h2>Weather</h2>
+          <img src="images/weater.svg" alt="sun icon water" width="60">
+        </div>
+        <p><span>Temperature:</span> 10°</p>
+        <p><span>Conditions:</span> Cloundy</p>
+        <p><span>Wind:</span> 5</p>
+        <p><span>Wind Chill:</span> <span id="wind-chill">N/A</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> Michelangelo Pezzini | Brazil</p>
+    <span id="lastModified"></span>
+  </footer>
+
+</body>
+
+</html>

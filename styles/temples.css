@@ -119,6 +119,7 @@ main {
 }
 
 footer {
+  height: 100%;
   text-align: center;
   padding: 2rem;
   background-color: #333;
